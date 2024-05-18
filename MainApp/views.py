@@ -11,6 +11,15 @@ author = {
     "email": "vasya@mail.ru"
 }
 
+items = [
+   {"id": 1, "name": "Кроссовки abibas" ,"quantity":5},
+   {"id": 2, "name": "Куртка кожаная" ,"quantity":2},
+   {"id": 5, "name": "Coca-cola 1 литр" ,"quantity":12},
+   {"id": 7, "name": "Картофель фри" ,"quantity":0},
+   {"id": 8, "name": "Кепка" ,"quantity":124},
+]
+
+
 def home(request):
     text = """
     <h1>"Изучаем django"</h1>
@@ -29,7 +38,9 @@ def about(request):
     """
     return HttpResponse(text)
 
-# items/1
-# items/2
+
+# item/1
+# item/2
 # ...
-# items/7
+# item/7
+# item/n
