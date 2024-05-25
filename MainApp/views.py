@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 
 # Create your views here.
 
@@ -44,3 +44,14 @@ def about(request):
 # ...
 # item/7
 # item/n
+
+def get_item(request, item_id):
+    """ По указанному id возвращаем имя элемента"""
+    for item in items:
+        if item['id'] == item_id:
+            result = f"""
+            <h2> Имя: {item["name"]} </h2>
+            <p> Количество: {item['quantity']} </p>
+            """
+            return HttpResponse(result)
+    return HttpResponseNotFound(f"Item with id={item_id} not found")
