@@ -15,7 +15,18 @@
 ## Запуск `ipython` в контексте приложений `django`
 ```
 python manage.py shell_plus --ipython
+```  
+
+## Выгрузка и загрузка данных из БД
+### Выгрузить данные из БД
 ```
+python manage.py dumpdata MainApp --indent 4 > ./fixtures/items.json
+```  
+### Загрузить данные из БД
+```
+python manage.py loaddata ./fixtures/items.json
+```
+
 
 ## Дополнительно
 1. Полезное дополнение для шаблонов `Django`
