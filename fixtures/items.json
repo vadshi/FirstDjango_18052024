@@ -6,7 +6,7 @@
         "name": "Кроссовки",
         "brand": "abibas",
         "count": 10,
-        "description": "Описание элемента"
+        "description": "Удобные кроссовки для бега"
     }
 },
 {
@@ -16,7 +16,7 @@
         "name": "Coca-cola bottle",
         "brand": "Coca-cola",
         "count": 5,
-        "description": "Описание элемента"
+        "description": "Вкусный напиток"
     }
 },
 {
@@ -25,8 +25,8 @@
     "fields": {
         "name": "Кепка",
         "brand": "Текстиль",
-        "count": 10,
-        "description": "Описание элемента"
+        "count": 12,
+        "description": "Удобный головной убор"
     }
 },
 {
@@ -36,7 +36,7 @@
         "name": "Картофель фри",
         "brand": "где вкусно",
         "count": 0,
-        "description": "Описание элемента"
+        "description": "Вкусная картошка, большая порция"
     }
 }
 ]
